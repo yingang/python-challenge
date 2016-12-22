@@ -12,4 +12,5 @@ http://www.pythonchallenge.com
 0. hockey -> oxygen, use PIL (install Pillow instead) to extract the grey bar: integrity
 0. use gz2 to decipher the code in page source: huge/file
 0. use range + zip to extract the two sets of coordinates in the page source, then use PIL to plot them: cow
+0. count the consecutive repeated characters (abbbcc -> 1a3b2c): 5808
 0. 

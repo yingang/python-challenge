@@ -1,8 +1,7 @@
 # python-challenge
 http://www.pythonchallenge.com
 
-* 2^38 to URL
-
+0. 2^38 to URL
 0. use string.maketrans, then apply the method to the URL: map -> ocr
 0. find characters in page source: equality
 0. use regex to find aAAAaAAAa in page source: linkedlist

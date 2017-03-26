@@ -13,3 +13,4 @@ http://www.pythonchallenge.com
 0. use range + zip to extract the two sets of coordinates in the page source, then use PIL to plot them: bull (not cow...)
 0. count the consecutive repeated characters (abbbcc -> 1a3b2c): 5808
 0. extract (odd, odd) or (even, even): evil
+0. evil1 -> evil2 -> split the gfx file into five parts one byte by one byte:  disproportinal

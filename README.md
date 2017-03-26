@@ -14,3 +14,5 @@ http://www.pythonchallenge.com
 0. count the consecutive repeated characters (abbbcc -> 1a3b2c): 5808
 0. extract (odd, odd) or (even, even): evil
 0. evil1 -> evil2 -> split the gfx file into five parts, one byte by one byte: disproportional
+  0. evil4.jpg -> Bert
+0. use xmlrpc.client as [Stack Overflow](http://stackoverflow.com/questions/7950297/faultcode-105-faultstring-xml-error-invalid-document-end-at-line-1-column-1) said to phone the devil found in last level

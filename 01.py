@@ -1,7 +1,3 @@
-from __future__ import absolute_import, division, print_function
-
-from string import maketrans
-
 def transform(text):
     for ch in text:
         if ch >= 'a' and ch <= 'z':
@@ -18,5 +14,7 @@ if __name__ == "__main__":
     
     transform(s)
 
-    trans = maketrans('abcdefghijklmnopqrstuvwxyz', 'cdefghijklmnopqrstuvwxyzab')
+    trans = str.maketrans('abcdefghijklmnopqrstuvwxyz', 'cdefghijklmnopqrstuvwxyzab')
     print(s.translate(trans))
+    
+    transform('map')

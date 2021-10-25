@@ -1,5 +1,3 @@
-#from __future__ import absolute_import, division, print_function
-
 def convert(input):
     if len(input) == 1:
         return '1' + input
@@ -19,7 +17,6 @@ def convert(input):
 
 if __name__ == "__main__":
     seed = '1'
-    for i in range(30):
-        print(len(seed))
+    for i in range(31):
+        print(seed, '=>', len(seed))
         seed = convert(seed)
-    print(len(seed))

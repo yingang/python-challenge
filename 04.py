@@ -1,12 +1,12 @@
-from __future__ import absolute_import, division, print_function
-
-import urllib
+from urllib.parse import urlencode
+from urllib.request import urlopen
 
 def autobot(nothing):
-    param = urllib.urlencode({'nothing' : nothing})
-    f = urllib.urlopen("http://www.pythonchallenge.com/pc/def/linkedlist.php?%s" % param)
+    param = urlencode({'nothing' : nothing})
+    f = urlopen("http://www.pythonchallenge.com/pc/def/linkedlist.php?%s" % param)
     words = f.read()
-    if words == "Yes. Divide by two and keep going.":
+    print(words)
+    if words == b"Yes. Divide by two and keep going.":
         return str(int(nothing)//2)
     else:
         return words.split()[-1]

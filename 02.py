@@ -1,5 +1,3 @@
-from __future__ import absolute_import, division, print_function
-
 def filter(filename):
     for line in open(filename):
         for ch in line:

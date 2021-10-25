@@ -1,25 +1,29 @@
-from __future__ import absolute_import, division, print_function
-
 import sys
 import zipfile
 
-def next(z, nothing):
-    filename = nothing + '.txt'
+def next(zf, id, comments):
+    filename = id + '.txt'
 
-    if filename not in z.namelist():
-        sys.exit(0)
+    if filename not in zf.namelist():
+        return None, None
 
-    info = z.getinfo(filename)
-    print(info.comment, end='')
+    info = zf.getinfo(filename)
+    comment = info.comment.decode('utf8')
 
-    words = z.open(filename).read()
+    words = zf.open(filename).read().decode('utf8')
+    print(words)
     if words == "Yes. Divide by two and keep going.":
-        return str(int(nothing)//2)
+        return str(int(id)//2), comment
     else:
-        return words.split()[-1]
+        return words.split()[-1], comment
 
 if __name__ == "__main__":
-    z = zipfile.ZipFile('06.zip', 'r')
+    zf = zipfile.ZipFile('channel.zip', 'r')
     start = '90052'
+    comments = ''
     while len(start) > 0:
-        start = next(z, start)
+        start, comment = next(zf, start, comments)
+        if start == None:
+            break
+        comments += comment
+    print(comments)

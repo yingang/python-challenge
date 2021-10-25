@@ -1,4 +1,4 @@
-with open('12.gfx', 'rb') as src:
+with open('evil2.gfx', 'rb') as src:
     d = src.read()
     for i in range(5):
         with open('12_' + str(i) + '.jpg', 'wb') as dst:

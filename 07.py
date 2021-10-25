@@ -1,5 +1,3 @@
-from __future__ import absolute_import, division, print_function
-
 from PIL import Image
 
 def extract_level(s):
@@ -8,7 +6,7 @@ def extract_level(s):
         print(chr(int(letter)), end='')
 
 if __name__ == "__main__":
-    im = Image.open('07.png')
+    im = Image.open('oxygen.png')
     (width, height) = im.size
    
     s = ''.join([chr(im.getpixel((x, height//2))[0]) for x in range(0, width, 7)])

@@ -15,4 +15,18 @@ http://www.pythonchallenge.com
 0. extract pixels with (odd, odd) or (even, even) coordinates in image: evil
 0. image URL is evil1 -> try 2&3&4&5...-> download evil2.gfx -> split the file into five parts, one byte by one byte: dis-pro-port-ional
 0. use `xmlrpc` to find out details of [the failed XML-RPC method](http://stackoverflow.com/questions/7950297/faultcode-105-faultstring-xml-error-invalid-document-end-at-line-1-column-1), then use `urllib` to download the evil4.jpg (failed to display in browser, remember?) in last challenge to get the devil name (Bert), finally use `xmlrpc.client` to phone the devil: italy
+0. check page source to find out that wire.png is actually a 10000x1 image, and we can wrap it up to a 100x100 image in the way illustrated by the following plot (as hinted in page source): cat -> uzi
+    <pre><code>                100 (1)
+        ───────────────────────────►
+        ▲  ─────────────────────►  │
+        │  ▲        98 (5)      │  |
+        │  │   ─ ─ ─ ─ ─ ─ ─ ►  │  │
+        │  │        96 (9)      │  │
+    98  │  │ 96 (8)          97 │  │ 99
+    (4) │  │                (6) │  │ (2)
+        │  │                    │  │
+        │  │        97 (7)      │  │
+        │  ◄─────────────────── ▼  │
+        ◄───────────────────────── ▼
+                    99 (3)</code></pre>
 0. 

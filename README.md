@@ -9,7 +9,7 @@ http://www.pythonchallenge.com
 0. [[peak hell](http://www.pythonchallenge.com/pc/def/peak.html)] pronounce 'peak hell' -> use `pickle` to decipher banner.p (Windows EOL will fail pickle, convert it to UNIX EOL first!), and plot the resulted 2D array: channel
 0. [[now there are pairs](http://www.pythonchallenge.com/pc/def/channel.html)] .html -> .zip (check readme.txt in it), use `zipfile` to do the loop and show the comments: hockey
 0. [[smarty](http://www.pythonchallenge.com/pc/def/oxygen.html)] hockey -> oxygen (check the letters in last challenge's output), use `PIL` (install `pillow` instead) to extract the grey bar: integrity
-0. [[working hard?](http://www.pythonchallenge.com/pc/def/integrity.html)] use `gz2` to decipher the codes in page source: `huge/file` (will be needed for each of the succeeding challenges)
+0. [[working hard?](http://www.pythonchallenge.com/pc/def/integrity.html)] use `bz2` to decipher the codes in page source: `huge/file` (will be needed for each of the succeeding challenges)
 0. [[connect the dots](http://huge:file@www.pythonchallenge.com/pc/return/good.html)] use `pillow` to plot the two sets of coordinates in the page source: bull (not cow...)
 0. [[what are you looking at?](http://huge:file@www.pythonchallenge.com/pc/return/bull.html)] click the bull in image to get the initial sequence, count the consecutive repeated characters (e.g., abbbcc -> 1a3b2c): 5808
 0. [[odd even](http://huge:file@www.pythonchallenge.com/pc/return/5808.html)] use `pillow` to extract pixels with (odd, odd) or (even, even) coordinates in image: evil
@@ -34,7 +34,7 @@ http://www.pythonchallenge.com
 0. [[eat?](http://huge:file@www.pythonchallenge.com/pc/return/romance.html)] the most difficult challenge so far:
    * the challenge image is named as `cookie.jpg`, anything about HTTP cookies saved in browser?
    * use any available browser extension to query site cookies and you would find out there is an `info` saved with value `you should have followed busynothing` (I totally forgot there was a similar query string `nothing` that has been used in challenge #4, you?)
-   * the small image at the bottom-left corner has appeared in challenge #4 (didn't remember at all? neither for me, again)
+   * the small image at the bottom-left corner has appeared in challenge #4 also (didn't remember at all? neither for me, again)
    * game time again! start with http://www.pythonchallenge.com/pc/def/linkedlist.php?busynothing=12345 and end with `that's it.`
    * remember each returned `info` cookie in last step, use `urlparse` to unquote the concatenated cookies and use `bz2` to decompress it: `is it the 26th already? call his father and inform him that "the flowers are on their way". he'll understand.`
    * use `xmlrpc` to call `Leopold` as what we did in challenge #13: violin

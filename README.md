@@ -6,7 +6,7 @@ http://www.pythonchallenge.com
 0. [[ocr](http://www.pythonchallenge.com/pc/def/ocr.html)] use `str.isalpha` to find out english characters in page source: equality
 0. [[re](http://www.pythonchallenge.com/pc/def/equality.html)] use regex (`re`) to find aAAA<strong>a</strong>AAAa in page source: linkedlist
 0. [[follow the chain](http://www.pythonchallenge.com/pc/def/linkedlist.php)] .html -> .php, click the image, then use `urllib` to do the loop and be noticed if there is anything unexpected: peak
-0. [[peak hell](http://www.pythonchallenge.com/pc/def/peak.html)] pronounce 'peak hell' -> use `pickle` to deciper banner.p (Windows EOL will fail pickle, convert it to UNIX EOL first!), and plot the resulted 2D array: channel
+0. [[peak hell](http://www.pythonchallenge.com/pc/def/peak.html)] pronounce 'peak hell' -> use `pickle` to decipher banner.p (Windows EOL will fail pickle, convert it to UNIX EOL first!), and plot the resulted 2D array: channel
 0. [[now there are pairs](http://www.pythonchallenge.com/pc/def/channel.html)] .html -> .zip (check readme.txt in it), use `zipfile` to do the loop and show the comments: hockey
 0. [[smarty](http://www.pythonchallenge.com/pc/def/oxygen.html)] hockey -> oxygen (check the letters in last challenge's output), use `PIL` (install `pillow` instead) to extract the grey bar: integrity
 0. [[working hard?](http://www.pythonchallenge.com/pc/def/integrity.html)] use `gz2` to decipher the codes in page source: `huge/file` (will be needed for each of the succeeding challenges)
@@ -31,3 +31,12 @@ http://www.pythonchallenge.com
                     99 (3)</code></pre>
 0. [[whom?](http://huge:file@www.pythonchallenge.com/pc/return/uzi.html)] use `datetime` to deduce the burned year number (1xx6/01/26, Monday, Leap Year), then we get 1176/1356/1576/1756/1976. After checking the second youngest birth date online (1756/01/27), we get: Mozart
 0. [[let me get this straight](http://huge:file@www.pythonchallenge.com/pc/return/mozart.html)] zoom out the image to find out there is exactly one purple segment in the first several image rows, use `pillow` to rotate each image row to align the purple segments vertically: romance
+0. [[eat?](http://huge:file@www.pythonchallenge.com/pc/return/romance.html)] the most difficult challenge so far:
+   * the challenge image is named as `cookie.jpg`, anything about HTTP cookies saved in browser?
+   * use any available browser extension to query site cookies and you would find out there is an `info` saved with value `you should have followed busynothing` (I totally forgot there was a similar query string `nothing` that has been used in challenge #4, you?)
+   * the small image at the bottom-left corner has appeared in challenge #4 (didn't remember at all? neither for me, again)
+   * game time again! start with http://www.pythonchallenge.com/pc/def/linkedlist.php?busynothing=12345 and end with `that's it.`
+   * remember each returned `info` cookie in last step, use `urlparse` to unquote the concatenated cookies and use `bz2` to decompress it: `is it the 26th already? call his father and inform him that "the flowers are on their way". he'll understand.`
+   * use `xmlrpc` to call `Leopold` as what we did in challenge #13: violin
+   * /return/violin.html -> /stuff/violin.php, nothing but the picture of Leopold?
+   * use `requests` to access violon.php with cookie `info=the flowers are on their way` set: balloons

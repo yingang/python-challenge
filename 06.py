@@ -8,9 +8,9 @@ def next(zf, id, comments):
         return None, None
 
     info = zf.getinfo(filename)
-    comment = info.comment.decode('utf8')
+    comment = info.comment.decode('utf-8')
 
-    words = zf.open(filename).read().decode('utf8')
+    words = zf.open(filename).read().decode('utf-8')
     print(words)
     if words == "Yes. Divide by two and keep going.":
         return str(int(id)//2), comment
